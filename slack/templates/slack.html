@@ -1,0 +1,10 @@
+<html>
+    <h1>
+        Send msg to vinay
+    </h1>
+    <form method="post", action="/vinay/">
+        {% csrf_token %}
+        <input type="email" name="email">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</html>
